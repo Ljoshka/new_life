@@ -18,7 +18,7 @@ public class CustomUserDetailsService implements UserDetailsService {
         List<Users> users = usersDAO.getUserByEmail(username);
 
         if (users.isEmpty()) {
-            throw new UsernameNotFoundException("User " username + "not found");
+            throw new UsernameNotFoundException("User " + username + "not found");
         }
 
         return new CustomUserDetails(users.get(0));

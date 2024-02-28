@@ -27,4 +27,9 @@ public class RegistrationController {
         model.addAttribute("lastName", users.getLastName());
         return "successRegistration";
     }
+
+    @GetMapping("/login")
+    public String getLoginPage() {
+        return "Login";
+    }
 }
