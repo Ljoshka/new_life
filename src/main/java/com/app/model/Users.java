@@ -9,7 +9,7 @@ public class Users {
     private String telephoneNumber;
     private String address;
     private String country;
-    private int postcode;
+    private String postcode;
     private String delivery;
     private String cart;
     private String comment;
@@ -76,11 +76,11 @@ public class Users {
         this.country = country;
     }
 
-    public int getPostcode() {
+    public String getPostcode() {
         return postcode;
     }
 
-    public void setPostcode(int postcode) {
+    public void setPostcode(String postcode) {
         this.postcode = postcode;
     }
 

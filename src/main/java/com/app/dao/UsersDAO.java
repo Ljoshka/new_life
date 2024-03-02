@@ -43,7 +43,7 @@ public class UsersDAO {
         users.setTelephoneNumber(rs.getString("telephone_number"));
         users.setAddress(rs.getString("adress"));
         users.setCountry(rs.getString("country"));
-        users.setPostcode(rs.getInt("postcode"));
+        users.setPostcode(rs.getString("postcode"));
         users.setDelivery(rs.getString("delivery"));
         users.setCart(rs.getString("cart_id"));
         users.setComment(rs.getString("comments"));
